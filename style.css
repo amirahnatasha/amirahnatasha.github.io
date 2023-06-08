@@ -1,5 +1,5 @@
 body {
-    height: auto;
+    height: 110%;
     width: 100%;
     background-repeat: no-repeat;
     background-size: contain;
@@ -9,6 +9,16 @@ body {
 
 a {
     color: black !important;
+    text-decoration: none !important;
+}
+
+#link:hover {
+    text-decoration: underline !important;
+  }
+
+.space {
+    margin-left: 20%; 
+    margin-right: 20%;
 }
 
 .c {
