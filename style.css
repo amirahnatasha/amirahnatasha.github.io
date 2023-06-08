@@ -1,0 +1,34 @@
+body {
+    height: auto;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif !important;
+  }
+
+a {
+    color: black !important;
+}
+
+.c {
+    max-width: 648px;
+    margin: 20px;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.center {
+    max-width: 800px;
+    margin: 20px;
+}
+
+#welcome {
+    font-size: 55px;
+}
+
+.bg {
+    background-color: EBDCCB;
+}
