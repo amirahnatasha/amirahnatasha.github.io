@@ -7,6 +7,15 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif !important;
   }
 
+#title {
+    font-size: 30px;
+}
+
+#sub {
+    font-size: 20px;
+    font-style: italic;
+}
+
 .card {
     background-color: transparent;
 }
