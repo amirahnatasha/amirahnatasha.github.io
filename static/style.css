@@ -2,20 +2,6 @@
 
 /* ---------------- */
 
-@media (max-width: 768px) {
-   .typed-out h1 {
-      font-size: 6vw; /* Adjusted font size for smaller screens */
-    }
-
-    .mobile-line-break {
-      display: block; /* Show line breaks on mobile screens */
-    }
-  }
-
-  .mobile-line-break {
-    display: none; /* Hide line breaks on larger screens */
-  }
-
 @font-face {
     font-family: 'bellefairregular' !important;
     src: url('bellefair-regular-webfont.woff2') format('woff2'),
