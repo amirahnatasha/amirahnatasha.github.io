@@ -7,11 +7,14 @@
       font-size: 6vw; /* Adjusted font size for smaller screens */
     }
 
-    .typed-out h1 .mobile-line-break {
-      display: none; /* Hide line breaks on larger screens */
+    .mobile-line-break {
+      display: block; /* Show line breaks on mobile screens */
     }
+  }
 
-}
+  .mobile-line-break {
+    display: none; /* Hide line breaks on larger screens */
+  }
 
 @font-face {
     font-family: 'bellefairregular' !important;
