@@ -3,9 +3,14 @@
 /* ---------------- */
 
 @media (max-width: 768px) {
-    .typed-out h1 {
+   .typed-out h1 {
       font-size: 6vw; /* Adjusted font size for smaller screens */
     }
+
+    .typed-out h1 .mobile-line-break {
+      display: none; /* Hide line breaks on larger screens */
+    }
+
 }
 
 @font-face {
