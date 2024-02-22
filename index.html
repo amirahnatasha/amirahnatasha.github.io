@@ -31,8 +31,11 @@
   </div>
 
   <div class="typed-out">
-    <h1>Hello world! I'm <span id="cursive">Amirah</span>.<span class="mobile-br"><br></span> A computer science major<span class="mobile-br"><br></span> based in 📍 
-      <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
+    <h1>
+      <span id="sentence1">Hello world! I'm <span id="cursive">Amirah</span>.</span>
+      <span id="sentence2" style="visibility: hidden;"> A computer science major</span>
+      <span id="sentence3" style="visibility: hidden;"> based in 📍 <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" target="_blank">Shimane, Japan</a>.</span>
+    </h1>
   </div>
 
   <div class="navigation">
@@ -47,6 +50,18 @@
       var rotation = window.pageYOffset / 5; // Adjust the / 5 to control the speed of the rotation
       logo.style.transform = 'rotate(' + rotation + 'deg)';
     });
+
+    // JavaScript to control the typing animation
+    let sentence2 = document.getElementById('sentence2');
+    let sentence3 = document.getElementById('sentence3');
+
+    setTimeout(function() {
+      sentence2.style.visibility = 'visible';
+    }, 2000); // Adjust the timing as needed
+
+    setTimeout(function() {
+      sentence3.style.visibility = 'visible';
+    }, 4000); // Adjust the timing as needed
   </script>
 </body>
 </html>
