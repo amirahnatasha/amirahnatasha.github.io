@@ -57,20 +57,20 @@ h1, h2, h3{
     font-family: 'bellefairregular' !important;
   }
 
-/* .home-body .typed-out {
+.home-body .typed-out {
     border-right: 2px solid white; 
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
-} */
+}
 
-.home-body .typed-out span {
+/* .home-body .typed-out span {
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
     border-right: 2px solid white; /* Simulates the typing cursor */
-  }
+  } */
 
 /* Typing animation */
 @keyframes typing {
