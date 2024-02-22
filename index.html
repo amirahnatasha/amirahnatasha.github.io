@@ -32,9 +32,9 @@
 
   <div class="typed-out">
     <h1>
-      <span id="sentence1">Hello world! I'm <span id="cursive">Amirah</span>.</span><span class="mobile-br"><br></span>
-      <span id="sentence2" style="visibility: hidden;"> A computer science major</span><span class="mobile-br"><br></span>
-      <span id="sentence3" style="visibility: hidden;"> based in 📍 <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" target="_blank">Shimane, Japan</a>.</span>
+      <span id="sentence1" class="typing">Hello world! I'm <span id="cursive">Amirah</span>.</span><span class="mobile-br"><br></span>
+      <span id="sentence2" class="typing" style="display: none;"> A computer science major</span><span class="mobile-br"><br></span>
+      <span id="sentence3" class="typing" style="display: none;"> based in 📍 <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" target="_blank">Shimane, Japan</a>.</span>
     </h1>
   </div>
 
@@ -51,17 +51,21 @@
       logo.style.transform = 'rotate(' + rotation + 'deg)';
     });
 
-    // JavaScript to control the typing animation
+    let sentence1 = document.getElementById('sentence1');
     let sentence2 = document.getElementById('sentence2');
     let sentence3 = document.getElementById('sentence3');
 
-    setTimeout(function() {
-      sentence2.style.visibility = 'visible';
-    }, 2000); // Adjust the timing as needed
+    sentence1.style.animation = "typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite";
 
     setTimeout(function() {
-      sentence3.style.visibility = 'visible';
-    }, 4000); // Adjust the timing as needed
+      sentence2.style.display = 'inline';
+      sentence2.style.animation = "typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite";
+    }, 3500); // Adjust the timing as needed
+
+    setTimeout(function() {
+      sentence3.style.display = 'inline';
+      sentence3.style.animation = "typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite";
+    }, 7000);
   </script>
 </body>
 </html>
