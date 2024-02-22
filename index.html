@@ -6,6 +6,36 @@
 <link rel="stylesheet" href="static/style.css">
 <title>Amirah's Portfolio</title>
 </head>
+<style>
+  .typed-out h1 {
+    font-size: 3.5vw; /* Adjust for larger screens */
+  }
+
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .typed-out h1 {
+      font-size: 6vw; 
+    }
+
+    .typed-out h1 br {
+      display: none; 
+    }
+
+    .typed-out h1 .mobile-br {
+      display: none; 
+    }
+  }
+
+  @media (max-width: 480px) {
+    .typed-out h1 {
+      font-size: 8vw; 
+    }
+
+    .typed-out h1 .mobile-br {
+      display: inline; 
+    }
+  }
+</style>
 <body class="home-body">
   <div class="home-header">
     <a href="index.html">
@@ -14,8 +44,8 @@
   </div>
 
   <div class="typed-out">
-    <h1 style="font-size: 3.5vw;">Hello world! I'm <span id="cursive">Amirah</span>. <br/> A computer science major based in 📍 
-      <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
+  <h1>Hello world! I'm <span id="cursive">Amirah</span>.<span class="mobile-br"><br></span> A computer science major<span class="mobile-br"><br></span> based in 📍 
+    <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
   </div>
 
   <div class="navigation">
