@@ -12,29 +12,16 @@
   }
 
   /* Responsive adjustments */
-  @media (max-width: 768px) {
+   @media (max-width: 768px) {
     .typed-out h1 {
-      font-size: 6vw; 
+      font-size: 6vw; /* Adjust font size for smaller screens */
     }
 
-    .typed-out h1 br {
-      display: none; 
-    }
-
-    .typed-out h1 .mobile-br {
-      display: none; 
+    .mobile-br {
+      display: inline; /* Show mobile-specific line breaks on smaller screens */
     }
   }
 
-  @media (max-width: 480px) {
-    .typed-out h1 {
-      font-size: 8vw; 
-    }
-
-    .typed-out h1 .mobile-br {
-      display: inline; 
-    }
-  }
 </style>
 <body class="home-body">
   <div class="home-header">
@@ -44,8 +31,8 @@
   </div>
 
   <div class="typed-out">
-  <h1>Hello world! <span class="mobile-br"><br></span> I'm <span id="cursive">Amirah</span>.<span class="mobile-br"><br></span> A computer science major<span class="mobile-br"><br></span> based in 📍 
-    <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
+    <h1>Hello world! I'm <span id="cursive">Amirah</span>.<span class="mobile-br"><br></span> A computer science major<span class="mobile-br"><br></span> based in 📍 
+      <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
   </div>
 
   <div class="navigation">
