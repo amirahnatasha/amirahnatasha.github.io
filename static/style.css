@@ -69,7 +69,7 @@ h1, h2, h3{
     white-space: nowrap;
     overflow: hidden;
     display: inline-block;
-    border-right: 2px solid white; /* Simulates the typing cursor */
+    border-right: 2px solid white; 
   } */
 
 /* Typing animation */
