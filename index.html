@@ -6,23 +6,6 @@
 <link rel="stylesheet" href="static/style.css">
 <title>Amirah's Portfolio</title>
 </head>
-<style>
-  .typed-out h1 {
-    font-size: 3.5vw; /* Adjust for larger screens */
-  }
-
-  /* Responsive adjustments */
-   @media (max-width: 768px) {
-    .typed-out h1 {
-      font-size: 6vw; /* Adjust font size for smaller screens */
-    }
-
-    .mobile-br {
-      display: inline; /* Show mobile-specific line breaks on smaller screens */
-    }
-  }
-
-</style>
 <body class="home-body">
   <div class="home-header">
     <a href="index.html">
@@ -31,11 +14,8 @@
   </div>
 
   <div class="typed-out">
-    <h1>
-      <span id="sentence1" class="typing" style="animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;">Hello world! I'm <span id="cursive">Amirah</span>.</span><span class="mobile-br"><br></span>
-      <span id="sentence2" class="typing" style="display: none; animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;"> A computer science major</span><span class="mobile-br"><br></span>
-      <span id="sentence3" class="typing" style="display: none; animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;"> based in 📍 <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" target="_blank">Shimane, Japan</a>.</span>
-    </h1>
+    <h1 style="font-size: 3.5vw;">Hello world! I'm <span id="cursive">Amirah</span>. <br/> A computer science major based in 📍 
+      <a href="https://en.wikipedia.org/wiki/Shimane_Prefecture" id="link" target="_blank">Shimane, Japan</a>.</h1>
   </div>
 
   <div class="navigation">
@@ -50,17 +30,6 @@
       var rotation = window.pageYOffset / 5; // Adjust the / 5 to control the speed of the rotation
       logo.style.transform = 'rotate(' + rotation + 'deg)';
     });
-
-    let sentence2 = document.getElementById('sentence2');
-    let sentence3 = document.getElementById('sentence3');
-
-    setTimeout(function() {
-      sentence2.style.display = 'inline-block';
-    }, 3500); // Adjust the timing as needed
-
-    setTimeout(function() {
-      sentence3.style.display = 'inline-block';
-    }, 7000);
   </script>
 </body>
 </html>
